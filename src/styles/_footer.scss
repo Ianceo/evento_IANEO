@@ -1,8 +1,7 @@
 @use 'variables' as *;
 
 .footer {
-    background-color: rgba(0, 0, 0, 0.542);
-    max-width: 960px;
+    background-color: rgba(0, 0, 0, 0.824);
     width: 100%;
     margin: 0 auto;
     padding: 20px;
@@ -13,9 +12,12 @@
         color:$textColor;
 
     }
-}
 
-.container {
-        display: flex;
-        gap: 40px;
+    @media (max-width: 640px){
+        max-width: 80%;
     }
+
+    @media (max-width: 1024px){
+        max-width: 90%;
+    }
+}
